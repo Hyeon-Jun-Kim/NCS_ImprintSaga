@@ -2,6 +2,7 @@ package com.hanshin.ncs_imprintsaga;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,13 +26,15 @@ public class MainActivity extends AppCompatActivity {
         main_MY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this.getApplicationContext(), MyPageActivity.class);
+                MainActivity.this.startActivity(intent);
             }
         });
         main_SHOP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this.getApplicationContext(), ShopActivity.class);
+                MainActivity.this.startActivity(intent);
             }
         });
         main_SETTING.setOnClickListener(new View.OnClickListener() {
