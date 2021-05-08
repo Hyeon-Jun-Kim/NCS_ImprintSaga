@@ -43,6 +43,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "538497303587-h0pggch8soaqlrsn87sc6h8omm206lb7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hanshin.ncs_imprintsaga",
+            "certificate_hash": "e55b2b09058320567d9ce7b9cae6d32807cab7cd"
+          }
+        },
+        {
           "client_id": "538497303587-t3ptu6m2pck6d4h54i9julu6r4pprqbp.apps.googleusercontent.com",
           "client_type": 3
         }

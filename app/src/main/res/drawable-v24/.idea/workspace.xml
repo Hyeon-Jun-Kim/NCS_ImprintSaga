@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00b40e92-9c95-4f5a-97b4-32ac99649055" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char1_wp_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char1_wp_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char1_wp_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char2_wp_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char2_wp_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char2_wp_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char3_wp_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char3_wp_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/char3_wp_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_main.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\suhye\Desktop\SuhyeonFile\androidworkspace\NCS_project_ImprintedSaga\app\src\main\res\drawable-v24\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qvbvkLMtGl5d3TaO3du69BEknX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00b40e92-9c95-4f5a-97b4-32ac99649055" name="Default Changelist" comment="" />
+      <created>1617963243026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617963243026</updated>
+    </task>
+    <servers />
+  </component>
+</project>

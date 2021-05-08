@@ -96,5 +96,4 @@ public class BattleActivity extends AppCompatActivity {
         String meaning;
         String grade;
     }
-
 }

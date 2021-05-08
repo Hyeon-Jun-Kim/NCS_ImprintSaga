@@ -4,7 +4,6 @@ public class MyPage_Item {
     String level;
     String  point;
     String  stage;
-    String hp;
     String atk;
     String dfd;
     String skill;  // (타이머, 재탄생)
@@ -32,14 +31,6 @@ public class MyPage_Item {
 
     public void setStage(String stage) {
         this.stage = stage;
-    }
-
-    public String getHp() {
-        return hp;
-    }
-
-    public void setHp(String hp) {
-        this.hp = hp;
     }
 
     public String getAtk() {

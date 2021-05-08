@@ -13,27 +13,23 @@ public class ShopViewAdapter extends BaseAdapter {
 
     //그리드뷰 이미지 저장위치
     Integer[] shopListImage ={
-            R.drawable.question, R.drawable.question, R.drawable.question, R.drawable.question, R.drawable.question,
-            R.drawable.question, R.drawable.question, R.drawable.question, R.drawable.question
+            R.drawable.item1, R.drawable.item2, R.drawable.item3,
+            R.drawable.item4, R.drawable.item5, R.drawable.item6,
+            R.drawable.item7, R.drawable.item8, R.drawable.item9
     };
-//    //그리드뷰 이미지 저장위치
-//    Integer[] shopListImage ={
-//            R.drawable.char1, R.drawable.char2, R.drawable.char3,
-//            R.drawable.pet1a, R.drawable.pet2a, R.drawable.pet3a,
-//            R.drawable.wp1, R.drawable.wp2, R.drawable.wp3
-//    };
+
     //그리드뷰 이미지 가격
-    Integer[] shopPriceListID ={
+    Integer[] shopListPrice ={
             1000, 3000, 5000,
             500, 1000, 2000,
             800, 1500, 3000
     };
 
     //그리드뷰 이미지 타이틀
-    String[] shpoListTitle=  {
-            "character1", "character2", "character3",
-            "pet1", "pet2", "pet3",
-            "weapon1", "weapon2", "weapon3"
+    String[] shopListTitle=  {
+            "item1", "item2", "item3",
+            "item4", "item5", "item6",
+            "item7", "item8", "item9"
     };
     public ShopViewAdapter(Context c) {
         context = c;
@@ -67,7 +63,7 @@ public class ShopViewAdapter extends BaseAdapter {
         image.setImageResource(shopListImage[position]);
         image.setScaleType(ImageView.ScaleType.FIT_XY);
         image.setPadding(20,20,20,20);
-        textView.setText(shopPriceListID[position].toString());
+        textView.setText(shopListPrice[position].toString());
 
         return  convertView;
     }
