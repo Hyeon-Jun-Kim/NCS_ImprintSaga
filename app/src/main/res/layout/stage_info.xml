@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:numStars="3"
             android:rating="0"
+            android:isIndicator="true"
             android:theme="@style/RatingBar"/>
 
         <TextView

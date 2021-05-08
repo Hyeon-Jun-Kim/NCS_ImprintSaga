@@ -2,16 +2,27 @@ package com.hanshin.ncs_imprintsaga;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
+
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+
+public class MainActivity extends Activity {
     Button main_MY, main_SHOP, main_SETTING, main_TRAINING;
     Button stageBtn[] = new Button[9];
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,15 +64,14 @@ public class MainActivity extends AppCompatActivity {
         for(int i =0;i<9;i++){
             int k = getResources().getIdentifier("main_stage1_"+(i+1), "id", getPackageName());
             stageBtn[i] = findViewById( k );
+            stageBtn[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mapSelectDialog mapSelectDialog = new mapSelectDialog(MainActivity.this);
+                    mapSelectDialog.callFunction();
+                }
+            });
         }
-
-        stageBtn[0].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mapSelectDialog mapSelectDialog = new mapSelectDialog(MainActivity.this);
-                mapSelectDialog.callFunction();
-            }
-        });
 
     }
 }

@@ -11,10 +11,12 @@
         android:layout_height="250dp">
 
         <TextView
+            android:id="@+id/questionTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="~~하다"
+            android:text="단어 뜻"
+            android:textSize="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -23,7 +25,7 @@
             app:layout_constraintVertical_bias="0.199" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/userIV"
             android:layout_width="92dp"
             android:layout_height="128dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +37,7 @@
             app:srcCompat="@drawable/man" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/enemyIV"
             android:layout_width="130dp"
             android:layout_height="124dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -47,11 +49,13 @@
             app:srcCompat="@drawable/monster" />
 
         <ProgressBar
-            android:id="@+id/progressBar3"
+            android:id="@+id/userPB"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            android:max="10"
+            android:progress="10"
+            app:layout_constraintBottom_toTopOf="@+id/userIV"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.132"
             app:layout_constraintStart_toStartOf="parent"
@@ -59,11 +63,13 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <ProgressBar
-            android:id="@+id/progressBar4"
+            android:id="@+id/enemyPB"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            android:max="10"
+            android:progress="10"
+            app:layout_constraintBottom_toTopOf="@+id/enemyIV"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.878"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,6 +84,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/timerTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -87,29 +94,41 @@
             android:textSize="25dp" />
 
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/timerPB"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:max="10"
+            android:progress="10"
             android:progressDrawable="@drawable/myprogressbar" />
 
         <TextView
+            android:id="@+id/answerTV"
             android:layout_width="342dp"
             android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:background="#FFFFFF"
-            android:layout_gravity="center"/>
+            android:text="answer"
+            android:textSize="40dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"/>
 
         <TextView
+            android:id="@+id/hintTV"
             android:layout_width="353dp"
             android:layout_height="43dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:text="***********************"
+            android:text="answer_random"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
             android:textColor="#00A3E1"
             android:textSize="40dp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/testbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="btn"/>
     </LinearLayout>
 </LinearLayout>

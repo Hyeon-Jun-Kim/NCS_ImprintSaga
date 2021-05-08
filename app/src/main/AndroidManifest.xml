@@ -19,6 +19,7 @@
 
         <activity android:name=".MyPageActivity" android:label="MyPage"> </activity>
         <activity android:name=".ShopActivity" android:label="Shop"> </activity>
+        <activity android:name=".BattleActivity" android:label="Battle"> </activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

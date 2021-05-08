@@ -2,6 +2,7 @@ package com.hanshin.ncs_imprintsaga;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.media.Rating;
 import android.view.View;
 import android.view.Window;
@@ -40,7 +41,8 @@ public class mapSelectDialog {
         selectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dlg.dismiss();
+                Intent intent = new Intent(context.getApplicationContext(), BattleActivity.class);
+                context.startActivity(intent);
             }
         });
     }
