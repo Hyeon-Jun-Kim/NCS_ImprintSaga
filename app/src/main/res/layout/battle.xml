@@ -79,7 +79,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
         android:background="#004481"
         android:orientation="vertical">
 
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:max="10"
-            android:progress="10"
+            android:progress="0"
             android:progressDrawable="@drawable/myprogressbar" />
 
         <TextView
@@ -118,7 +118,7 @@
             android:layout_width="353dp"
             android:layout_height="43dp"
             android:layout_gravity="center"
-            android:text="answer_random"
+            android:text="Hint"
             android:gravity="center"
             android:layout_marginBottom="10dp"
             android:textColor="#00A3E1"
@@ -129,6 +129,15 @@
             android:id="@+id/testbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="btn"/>
+            android:text="START"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/wordBtns"
+        android:layout_width="420dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#004481"
+        android:layout_gravity="center"
+        android:gravity="center">
     </LinearLayout>
 </LinearLayout>
