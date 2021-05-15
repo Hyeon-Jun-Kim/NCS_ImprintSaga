@@ -79,7 +79,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="190dp"
         android:background="#004481"
         android:orientation="vertical">
 
@@ -91,13 +91,13 @@
             android:inputType="number"
             android:text="10"
             android:textColor="#FFFFFF"
-            android:textSize="25dp" />
+            android:textSize="30dp" />
 
         <ProgressBar
             android:id="@+id/timerPB"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_height="27dp"
             android:layout_gravity="center"
             android:max="10"
             android:progress="0"
@@ -106,38 +106,33 @@
         <TextView
             android:id="@+id/answerTV"
             android:layout_width="342dp"
-            android:layout_height="50dp"
-            android:text="answer"
-            android:textSize="40dp"
-            android:textColor="#FFFFFF"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="answer"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
 
         <TextView
             android:id="@+id/hintTV"
             android:layout_width="353dp"
-            android:layout_height="43dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:text="Hint"
-            android:gravity="center"
             android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Hint"
             android:textColor="#00A3E1"
-            android:textSize="40dp"
+            android:textSize="50dp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/testbtn"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="START"/>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/wordBtns"
         android:layout_width="420dp"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:background="#004481"
+        android:layout_height="298dp"
         android:layout_gravity="center"
-        android:gravity="center">
-    </LinearLayout>
+        android:background="#004481"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
 </LinearLayout>
