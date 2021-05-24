@@ -17,25 +17,37 @@
 
         <Button
             android:id="@+id/main_my_btn"
-            android:layout_width="80dp"
-            android:layout_height="100dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="left"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#FBFEF9"
+            android:textColor="#0C6291"
+            android:textStyle="bold"
             android:text="MY" />
 
         <Button
             android:id="@+id/main_shop_btn"
-            android:layout_width="80dp"
-            android:layout_height="100dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="left"
             android:layout_marginTop="120dp"
+            android:layout_marginLeft="20dp"
+            android:background="#FBFEF9"
+            android:textColor="#0C6291"
+            android:textStyle="bold"
             android:text="SHOP" />
         <Button
             android:id="@+id/main_setting_btn"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FBFEF9"
+            android:textColor="#0C6291"
+            android:textStyle="bold"
             android:text="SETTING" />
 
         <ScrollView
@@ -43,12 +55,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="none"
-
             tools:ignore="InvalidId">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#0C6291"
                 android:orientation="vertical">
 
                 <Button
@@ -138,9 +150,14 @@
 
         <Button
             android:id="@+id/main_training_btn"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FBFEF9"
+            android:textColor="#0C6291"
+            android:textStyle="bold"
             android:text="TRAINING" />
 
     </FrameLayout>

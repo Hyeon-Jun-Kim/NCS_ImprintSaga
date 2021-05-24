@@ -2,6 +2,7 @@ package com.hanshin.ncs_imprintsaga;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,10 +27,6 @@ public class StageActivity extends AppCompatActivity {
         main_SETTING = findViewById(R.id.main_setting_btn);
         main_TRAINING = findViewById(R.id.main_training_btn);
         scrollview = findViewById(R.id.scrollview);
-        
-
-
-
 
         main_MY.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,18 +52,20 @@ public class StageActivity extends AppCompatActivity {
         main_TRAINING.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getApplicationContext(), TrainingActivity.class);
+                startActivity(intent);
             }
         });
 
         for(int i =0;i<9;i++){
             int k = getResources().getIdentifier("main_stage1_"+(i+1), "id", getPackageName());
             stageBtn[i] = findViewById( k );
+            final String stageNum = String.valueOf(i+1);
             stageBtn[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     mapSelectDialog mapSelectDialog = new mapSelectDialog(StageActivity.this);
-                    mapSelectDialog.callFunction();
+                    mapSelectDialog.callFunction(stageNum);
                 }
             });
         }

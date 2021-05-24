@@ -27,7 +27,10 @@
             android:label="Shop" />
         <activity
             android:name=".BattleActivity"
-            android:label="Shop" />
+            android:label="Battle" />
+        <activity
+            android:name=".TrainingActivity"
+            android:label="Training" />
         <activity android:name=".SettingActivity" android:label="google login"> </activity>
         <activity android:name=".StageActivity" android:label="Main"> </activity>
     </application>

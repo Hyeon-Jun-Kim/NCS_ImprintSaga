@@ -3,7 +3,6 @@ package com.hanshin.ncs_imprintsaga;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.media.Rating;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -17,7 +16,7 @@ public class mapSelectDialog {
         this.context = context;
     }
 
-    public void callFunction() {
+    public void callFunction(String stageNum) {
 
         // 커스텀 다이얼로그를 정의하기위해 Dialog클래스를 생성한다.
         final Dialog dlg = new Dialog(context);
@@ -26,7 +25,7 @@ public class mapSelectDialog {
         dlg.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         // 커스텀 다이얼로그의 레이아웃을 설정한다.
-        dlg.setContentView(R.layout.stage_info);
+        dlg.setContentView(R.layout.stage_start_info);
 
         // 커스텀 다이얼로그를 노출한다.
         dlg.show();
@@ -38,11 +37,16 @@ public class mapSelectDialog {
         final TextView rateTv = (TextView) dlg.findViewById(R.id.rateTv);
         final Button selectBtn = (Button) dlg.findViewById(R.id.selectBtn);
 
+        final String stage = stageTv.getText()+stageNum;
+        stageTv.setText(stage);
+
         selectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context.getApplicationContext(), BattleActivity.class);
+                intent.putExtra("stageNum",stage);
                 context.startActivity(intent);
+                dlg.cancel();
             }
         });
     }
